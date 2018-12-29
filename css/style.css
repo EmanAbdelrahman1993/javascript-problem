@@ -1,0 +1,24 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    margin: 20px 0;
+    background-color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.row
+{
+    margin: 0px;
+}
+.test
+{
+    border: 2px dashed darkblue;
+}
+hr
+{
+    background-color: darkblue;
+}

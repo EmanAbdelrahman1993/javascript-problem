@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <title>JavaScript Problems</title>
+    </head>
+    
+    <body>
+        <div class="row">
+
+            <div class="col-md-8 m-auto test">
+
+
+                <div class="container mt-3">
+                    <span class="alert alert-success">Problem 1</span>
+                    <p class="mt-3">Area of Triangle where lengths are</p>
+                    <label>Enter Valid Number 1:</label>
+                    <input type="number" id="userNumbe1" class="form-control"/>
+                    <label>Enter Valid Number 2:</label>
+                    <input type="number" id="userNumbe2" class="form-control"/>
+                   <label>Enter Valid Number 3:</label>
+                    <input type="number" id="userNumbe3" class="form-control"/>
+                    <div class="text-center mt-2">
+                        <button class="btn btn-info" onclick="areaOfTriangle()">find Area</button>
+                    </div>
+                    <input id="problem1Result" class="form-control alert-danger mt-2" readonly/>
+                    
+                </div>
+                <hr>
+                
+                <div class="container mt-3">
+                    <span class="alert alert-success">Problem 2</span>
+                    <p class="mt-3">Enter a Number between 1-10:</p>
+                    <input type="number" id="userNo" class="form-control"/>
+                    <label>Find if your number matches generated number </label>
+                    <div class="text-center mt-2">
+                        <button class="btn btn-info" onclick="generateRandomNo()">Check</button>
+                    </div>
+                    <input class="form-control alert-danger mt-2" id="problem2Result" readonly/>
+                </div>
+                <hr>
+        
+                <div class="container mt-3">
+                    <span class="alert alert-success">Problem 3</span><br>
+                    
+                        <p class="mt-3">1st Number:</p>
+                        <input type="number" class="form-control" id="firstNo"/>
+                        <p class="">2nd Number:</p> 
+                        <input type="number" class="form-control" id="secondNo"/><br>
+                        <div class="text-center">
+                            <button class="btn btn-info" onclick="multiply()">Multiply</button>
+                            <button class="btn btn-danger" onclick="divide()">Divide</button>
+                        </div>
+                        <span>The result is:</span>
+                        
+                        <input id="problem3Result" class="form-control alert-danger" readonly/>
+                </div>
+                <hr>
+        
+                <div class="container mt-3">
+                    <span class="alert alert-success">Problem 4 , Problem 5</span>
+                    <br>
+                    
+                    <label class="mt-3">Enter Temperature</label>
+                    <input type="number" class="form-control" id="degree"/>
+                    <div class="text-center mt-3">
+                        <button onclick="CelsuisToFahrenheit()" class="btn btn-info">Covert To Fahrenheit</button>
+                        <button onclick="FahrenheitToCelsuis()" class="btn btn-danger">Covert To Celsuis</button>
+                    </div>
+                    <span>The result is:</span>
+                    <input id="problem4Result1" class="alert-danger form-control" readonly/>
+                </div> 
+                <hr>
+                
+                <div class="container mt-3">
+                    <span class="alert alert-success">Problem 5</span><br>
+                    <label class="mt-3">Upload File :</label>
+                    <input id='inputfile' type='file' name='inputfile' onChange='getoutput()'><br>
+                    <label class="mt-1">Output Filename </label> <input id='outputfile' class="form-control alert-danger" type='text' name='outputfile' readonly>
+                    <label class="mt-1">Extension </label><input id='extension' class="form-control alert-danger" type='text' name='extension' readonly>
+
+
+        
+                </div>
+                <hr>
+                <div class="container mt-3">
+                    <span class="alert alert-success">Problem 6</span><br>
+                    <label class="mt-3">Enter Valid Number:</label>
+                    <input type="number" id="userNumber" class="form-control mt-1"/>
+                    <div class="text-center">
+                        <button class="btn btn-info mt-2" onclick="subtraction()">substact 13 from it</button>
+                    </div>
+                    <input id="problem6Result" class="form-control alert-danger mt-2" readonly/>
+        
+                </div> 
+                <hr>
+                <div class="container mt-3">
+                    <span class="alert alert-success">Problem 7</span><br>
+                    
+                    <label class="mt-3">Enter Valid Number 1:</label>
+                    <input type="number" id="userNo1" class="form-control mt-1"/>
+                    <label class="mt-1">Enter Valid Number 2:</label>
+                    <input type="number" id="userNo2" class="form-control mt-1"/>
+                    <div class="text-center mt-2">
+                        <button class="btn btn-info" onclick="triple()">sum two number (if same triple them)</button>
+                    </div>
+                    <input id="problem7Result" class="form-control alert-danger mt-2" readonly/>
+                    
+        
+                </div>
+                <hr>
+                <div class="container mt-3">
+                    <span class="alert alert-success">Problem 8</span><br>
+                    <p class="mt-3">(if one of them=50 or sum=50 return true)</p>
+                    <label>Enter Valid Number 1:</label>
+                    <input type="number" id="userNumber1" class="form-control"/>
+                    <label>Enter Valid Number 2:</label>
+                    <input type="number" id="userNumber2" class="form-control"/>
+                    <div class="text-center  mt-2">
+                        <button class="btn btn-info" onclick="checkNumber()">check 2 number</button>
+                    </div>
+                    <input id="problem8Result" class="form-control alert-danger mt-2" readonly/>
+        
+                </div> 
+                <hr>
+                <div class="container mt-3">
+                    <span class="alert alert-success">Problem 9</span><br>
+                    <p class="mt-3"> check a given integer is within 20 of 100 or 400</p>
+                    <label>Enter Valid Number 1:</label>
+                    <input type="number" id="usNum" class="form-control"/>
+                    <div class="text-center  mt-2">
+                        <button class="btn btn-info" onclick="numRange()">check  number</button>
+                    </div>
+                    <input id="problem9Result" class="form-control alert-danger mt-2" readonly/>
+                </div> 
+                <hr>
+                
+                <div class="container mt-2">
+                    <span class="alert alert-success">Problem 10</span>
+                    
+                    <p class="mt-3">(if one of positive and other is negative return true)</p>
+                    <label>Enter Valid Number 1:</label>
+                    <input type="number" id="userNu1" class="form-control"/>
+                    <label>Enter Valid Number 2:</label>
+                    <input type="number" id="userNu2" class="form-control"/>
+                    <div class="text-center mt-2">
+                        <button class="btn btn-info" onclick="positiveAndNegative()">check 2 number</button>
+                    </div>
+                    <input id="problem10Result" class="alert-danger form-control mt-2" readonly/>
+        
+                </div>  
+                <hr>
+                <div class="container mt-2">
+                    <span class="alert alert-success">Problem 11</span>
+                    <p class="mt-3"> check if two given integer values are in the range 50..99 (inclusive). Return true if
+                        either of them are in the said range</p>
+                    
+                    <label>Enter Valid Number 1:</label>
+                    <input type="number" id="userN1" class="form-control"/>
+                    <label>Enter Valid Number 2:</label>
+                    <input type="number" id="userN2" class="form-control"/>
+                    <div class="text-center mt-2">
+                        <button class="btn btn-info mt-2" onclick="sideRange()">check 2 number</button>
+                    </div>
+                    <input id="problem11Result" class="form-control alert-danger mt-2" readonly/>
+        
+                </div>   
+                <hr>
+                
+                <div class="container mt-2">
+                    <span class="alert alert-success">Problem 12</span><br>
+                    <p class="mt-3">(find Largest)</p>
+                    <label>Enter Valid Number 1:</label>
+                    <input type="number" id="userNumb1" class="form-control"/>
+                    <label>Enter Valid Number 2:</label>
+                    <input type="number" id="userNumb2" class="form-control"/>
+                   <label>Enter Valid Number 3:</label>
+                    <input type="number" id="userNumb3" class="form-control"/>
+                    <div class="text-center mt-2">
+                        <button class="btn btn-info" onclick="max()">find largest</button>
+                    </div>
+                    <input id="problem12Result" class="form-control alert-danger mt-2" readonly/>
+        
+        
+                </div>  
+                <hr>
+                
+                <div class="container mt-2">
+                    <span class="alert alert-success">Problem 13</span>
+                    <p class="mt-3">check if two numbers are in range 40..60 or in the range 70..100 inclusive</p>
+                    <label>Enter Valid Number 1:</label>
+                    <input type="number" id="userV1" class="form-control"/>
+                    <label>Enter Valid Number 2:</label>
+                    <input type="number" id="userV2" class="form-control"/>
+                    <div class="text-center mt-2">
+                        <button class="btn btn-info mt-2" onclick="twoRanges()">check 2 number</button>
+                    </div>
+                    <input id="problem13Result" class="form-control alert-danger mt-2" readonly/>
+        
+                </div>  
+                <hr>
+            
+                <div class="container mt-2">
+                    <span class="alert alert-success">Problem 14</span>
+                    <p class="mt-3">Sum array of three integer [6,3,7] </p>
+                    <div class="text-center">
+                        <button class="btn btn-info" onclick="arraySum()">Sum array</button>
+                    </div>
+                    <input id="problem14Result" class="form-control alert-danger my-2" readonly/>
+        
+        
+                </div>
+
+            </div>
+        </div>
+  
+    
+    
+        <script src="js/script.js"></script>
+    </body>
+
+
+
+
+</html>
